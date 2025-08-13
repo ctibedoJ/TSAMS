@@ -1,0 +1,46 @@
+# TSAMS Classical
+
+Classical mathematical implementations of the Tibedo Structural Algebraic Modeling System (TSAMS).
+
+## Overview
+
+TSAMS Classical provides classical mathematical implementations that build upon the core structures of TSAMS. It implements:
+
+- **Dedekind Cut Theory**: Implementation of Dedekind cut morphic conductors and automorphic structures
+- **Prime Theory**: Implementation of prime indexed structures and prime distribution formulas
+- **Braid Theory**: Implementation of braiding polynomial class layers and infinite time looping
+- **Septimal Theory**: Implementation of septimal hexagonal structures
+
+## Installation
+
+```bash
+pip install tsams-classical
+```
+
+## Usage
+
+```python
+import numpy as np
+from tsams_classical.dedekind_cut import DedekindCutMorphicConductor
+from tsams_classical.prime_theory import PrimeDistribution
+
+# Create a Dedekind cut morphic conductor
+conductor = DedekindCutMorphicConductor(168)
+print(f"Conductor: {conductor}")
+
+# Compute the automorphic structure
+automorphic = conductor.automorphic_structure()
+print(f"Automorphic structure: {automorphic}")
+
+# Create a prime distribution
+distribution = PrimeDistribution(1000)
+print(f"Number of primes up to 1000: {distribution.count()}")
+```
+
+## Documentation
+
+For detailed documentation, see the [TSAMS Documentation](https://github.com/ctibedoJ/tsams-docs).
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
